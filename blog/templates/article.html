@@ -7,6 +7,6 @@
 <body>
     <h1>{{ article.title }}</h1>
     <p>{{ article.content }}</p>
-    <button>修改文章</button>
+    <a href="{% url 'blog:edit' article.id %}">修改文章</a>
 </body>
 </html>
